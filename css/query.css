@@ -13,7 +13,7 @@
         backdrop-filter: blur(13px) !important;
         width: 80%;
         height: 100vh;
-        padding-top: 250px;
+        padding-top: 50px;
         transition: 0.4s;
         justify-content: center;
         z-index: 1000;
