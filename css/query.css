@@ -348,6 +348,6 @@
         font-size: 18px;
     }
     #contact {
-        scroll-margin-top: 250px !important;
+        scroll-margin-top: -250px !important;
     }
 }
