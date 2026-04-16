@@ -304,8 +304,8 @@
     h2 {
         font-size: 2.3rem;
     }
-    #prices {
-        top: -200px !important;
+    html body #prices {
+        scroll-margin-top: -200px !important;
     }
     #prices .btn-main {
         white-space: nowrap;
