@@ -91,3 +91,7 @@ nav .logo:hover img {
     background-color: #ffcc00; /* Tin Can Yellow */
     transition: all 0.3s ease;
 }
+
+.nav-links .logo {
+    display: none;
+}
