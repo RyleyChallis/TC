@@ -12,7 +12,7 @@
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.3s;
+    transition: 0.4s;
     box-shadow: 15px 15px 0px var(--main-yellow);
 }
 
@@ -20,6 +20,7 @@
     background: #fff;
     color: #000;
     transform: translateY(-4px);
+    box-shadow: none;
 }
 
 .crew-cta {
@@ -46,4 +47,18 @@
     color: var(--main-yellow);
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(241, 196, 15, 0.3);
+}
+
+.hero-btn {
+    background-color: var(--main-yellow);
+    padding: 12px 24px;
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-yellow);
+}
+
+#contact .btn-main {
+    margin-top: 25px;
 }
