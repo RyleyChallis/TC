@@ -305,7 +305,7 @@
         font-size: 2.3rem;
     }
     #prices {
-        scroll-margin-top: -150px !important;
+        scroll-margin-top: -200px !important;
     }
     #prices .btn-main {
         white-space: nowrap;
@@ -346,9 +346,6 @@
     }
     #crew .member-info p {
         font-size: 18px;
-    }
-    #gallery {
-        scroll-margin-top: -20px !important;
     }
     #contact {
         scroll-margin-top: -250px !important;
