@@ -304,9 +304,6 @@
     h2 {
         font-size: 2.3rem;
     }
-    #prices {
-        scroll-margin-top: -200px !important;
-    }
     #prices .btn-main {
         white-space: nowrap;
     }
@@ -348,6 +345,6 @@
         font-size: 18px;
     }
     #contact {
-        scroll-margin-top: -250px !important;
+        scroll-margin-top: 250px !important;
     }
 }
