@@ -1,0 +1,29 @@
+.landing-cta, .crew-cta, .prices-cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-cta a {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid var(--main-yellow);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--main-yellow);
+    backdrop-filter: blur(6px);
+}
+
+.landing-cta a:hover {
+    background-color: var(--main-yellow);
+    color: var(--text-main);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.crew-cta {
+    padding-bottom: 75px;
+}
