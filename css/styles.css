@@ -712,4 +712,5 @@ footer a:hover {
     font-weight: 900;
     font-size: 2rem;
     margin-bottom: 10px;
+    color: var(--text-main);
 }
