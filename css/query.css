@@ -75,6 +75,9 @@
         margin: 10px auto !important;
         padding: 0;
     }
+    html body section#prices {
+        scroll-margin-top: 200px !important;
+    }
     .gallery-grid {
         display: flex !important;
         flex-direction: column !important;
@@ -300,9 +303,6 @@
 @media (max-width: 520px) {
     h2 {
         font-size: 2.3rem;
-    }
-    #prices {
-        scroll-margin-top: -30px !important;
     }
     #prices .btn-main {
         white-space: nowrap;
