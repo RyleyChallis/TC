@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px 5%;
     background: rgba(0, 0, 0, 0.8); /* Slight transparency */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(13px);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -74,4 +74,20 @@ nav .logo:hover img {
 .nav-cta:hover {
     background-color: transparent;
     color: #ffcc00 !important;
+}
+
+/* Hide hamburger by default on desktop */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffcc00; /* Tin Can Yellow */
+    transition: all 0.3s ease;
 }

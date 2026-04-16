@@ -11,6 +11,26 @@ body, html {
     overflow-x: hidden;
 }
 
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dims the background */
+    z-index: 999; /* Just below the nav-links z-index */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    pointer-events: none; /* Allows clicks to pass through if needed */
+}
+
+body.nav-active::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 h1 {
     font-size: 4.5rem;
     font-family: 'anton', serif;
@@ -34,6 +54,7 @@ h2 {
 
 .section {
     min-height: 100vh;
+    margin: 0 !important;
 }
 
 header {
@@ -492,7 +513,7 @@ header h1 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* CRITICAL: Aligns everything to the left axis */
+    align-items: flex-start;
 }
 
 /* Header Styling */
@@ -531,7 +552,7 @@ header h1 {
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 3px;
-    color: #bbb; /* Muted label */
+    color: #bbb;
     margin-bottom: 5px;
 }
 
