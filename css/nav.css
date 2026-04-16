@@ -1,67 +1,77 @@
-nav {
-    background: transparent;
-    position: absolute;
-    width: 100%;
-
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 12vh;
-
-    margin: 0;
-    padding: 0 10%;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav .logo img {
-    width: 120px;
+    width: 95px;
     height: auto;
     transition: all 0.3s ease;
 }
 
-nav .logo img:hover {
+nav .logo:hover img {
     filter: brightness(80%);
 }
 
 .nav-links {
     display: flex;
-    gap: 2.2rem;
-}
-
-.nav-links li {
+    align-items: center;
     list-style: none;
+    gap: 30px;
 }
 
+/* Base style for the links */
 .nav-links li a {
-    color: var(--bg-two);
-    font-size: 24px;
-    font-family: 'inter', sans-serif;
-
+    position: relative;
+    color: #fff;
     text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: var(--main-yellow);
-}
-
-.btn-main {
-    display: inline-block;
-    padding: 18px 45px;
-    background-color: var(--main-yellow);
-    color: #1a1a1a;
-    border: 2px solid var(--main-yellow);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 800;
     font-size: 0.9rem;
-    letter-spacing: 3px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
 }
 
-.btn-main:hover {
+/* The Underline Effect */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffcc00; /* Tin Can Yellow */
+    transition: width 0.3s ease;
+}
+
+/* Hover States */
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-cta {
+    background-color: #ffcc00;
+    color: #000 !important;
+    padding: 12px 24px !important;
+    font-weight: 900;
+    border: 2px solid #ffcc00;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-cta:hover {
     background-color: transparent;
-    color: var(--main-yellow);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(241, 196, 15, 0.3);
+    color: #ffcc00 !important;
 }

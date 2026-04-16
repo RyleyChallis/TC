@@ -5,25 +5,45 @@
 }
 
 .landing-cta a {
-    display: inline-block;
     padding: 15px 40px;
-    border: 2px solid var(--main-yellow);
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
+    border: 2px solid #fff;
+    color: #fff;
     text-decoration: none;
-    color: var(--main-yellow);
-    backdrop-filter: blur(6px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    box-shadow: 15px 15px 0px var(--main-yellow);
 }
 
 .landing-cta a:hover {
-    background-color: var(--main-yellow);
-    color: var(--text-main);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: #fff;
+    color: #000;
+    transform: translateY(-4px);
 }
 
 .crew-cta {
     padding-bottom: 75px;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 18px 45px;
+    background-color: var(--main-yellow);
+    color: #1a1a1a;
+    border: 2px solid var(--main-yellow);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+}
+
+.btn-main:hover {
+    background-color: transparent;
+    color: var(--main-yellow);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(241, 196, 15, 0.3);
 }
