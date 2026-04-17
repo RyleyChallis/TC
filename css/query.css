@@ -94,7 +94,7 @@
         width: 100%;
         height: 400px;
         object-fit: cover;
-        border: 3px solid #f1f10e;
+        border: 3px solid var(--main-yellow);
     }
 
     .gallery-item.tall, 
@@ -267,7 +267,7 @@
         
         height: 280px !important;
         margin: 0 auto 40px auto !important;
-        border: 2px solid #f1f10e !important; /* Visual confirmation */
+        border: 2px solid #f1f10e !important;
         border-radius: 8px !important;
         overflow: hidden !important;
     }
@@ -313,22 +313,21 @@
     #crew .crew-list {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 10px !important; /* Small side breathing room */
+        padding: 0 10px !important;
     }
 
-    /* Target the member container */
     #crew .crew-member {
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important; /* This centers the image and text horizontally */
+        align-items: center !important;
         text-align: center !important;
         padding: 0 !important;
         margin: 0 auto 40px auto !important;
     }
     #crew .crew-member img {
-        width: 90% !important; /* Increase this % to fill more of the screen */
-        max-width: 100vw !important; /* Set a cap so they don't get blurry on small tablets */
+        width: 90% !important;
+        max-width: 100vw !important;
         height: auto !important;
         margin: 0 auto !important;
         display: block !important;

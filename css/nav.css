@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(13px);
     position: fixed;
     width: 100%;
@@ -27,7 +27,6 @@ nav .logo:hover img {
     gap: 30px;
 }
 
-/* Base style for the links */
 .nav-links li a {
     position: relative;
     color: #fff;
@@ -41,7 +40,6 @@ nav .logo:hover img {
     transition: color 0.3s ease;
 }
 
-/* The Underline Effect */
 .nav-links li a::after {
     content: '';
     position: absolute;
@@ -49,11 +47,10 @@ nav .logo:hover img {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffcc00; /* Tin Can Yellow */
+    background-color: #ffcc00;
     transition: width 0.3s ease;
 }
 
-/* Hover States */
 .nav-links li a:hover {
     color: #ffcc00;
 }
@@ -76,7 +73,6 @@ nav .logo:hover img {
     color: #ffcc00 !important;
 }
 
-/* Hide hamburger by default on desktop */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -88,7 +84,7 @@ nav .logo:hover img {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #ffcc00; /* Tin Can Yellow */
+    background-color: #ffcc00;
     transition: all 0.3s ease;
 }
 
